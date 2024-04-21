@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Square from './pages/square/square.tsx';
+import Circle from './pages/circle/circle.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: '/square',
+        element: <Square />
+      },
+      {
+        path: '/circle',
+        element: <Circle />
+      }
+    ]
   }
 ])
 
