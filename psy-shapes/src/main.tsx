@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Square from './pages/square/square.tsx';
 import Circle from './pages/circle/circle.tsx';
+import Triangle from './pages/triangle/triangle.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
       {
         path: '/circle',
         element: <Circle />
-      }
+      },
+      {
+        path: '/triangle',
+        element: <Triangle />
+      },
     ]
   }
 ])
