@@ -1,10 +1,13 @@
 import './App.css'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
+      <Link to={'/circle'}>
+        <button>To circles</button>
+      </Link>
       <Outlet />
     </>
   )
