@@ -7,6 +7,7 @@ import Square from './pages/square/square.tsx';
 import Circle from './pages/circle/circle.tsx';
 import Triangle from './pages/triangle/triangle.tsx';
 import Rectangle from './pages/rectangle/rectangle.tsx';
+import Crankle from './pages/crankle/crankle.tsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: '/rectangle',
         element: <Rectangle />
       },
+      {
+        path: '/crankle',
+        element: <Crankle />
+      }
     ]
   }
 ])
